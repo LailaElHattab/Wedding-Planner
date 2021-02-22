@@ -1,2 +1,14 @@
 # Wedding-Planner
-The project revolves around 3 main modules Admin, Planner,and Client. It all starts with a login page then If the user is an Admin he/she gets directed to a page divided into tabs in which it shows all the events planned , the clients registered ,and the  planners working with all their details ;in addition, the admin is capable of editing most of the fields as appropriate with the aid of JComboBox and JTextFields. Comes next is the planner. The planner is registered through the admin and gets his/her password through an email sent by the admin. Then, the planner is assigned a specific number of events in which he/she can edit specific details as he/she sees fit like the theme of the event and its venue. Lastly, the Client signs up and waits for the activation of the admin through an email ,and from there he/she can add all his/her preferred choices concerning his/her event or even edit it later on ,also he/she has the capability of adding a new event like a gender reveal. Through this project, we used most of the oop concepts which helped us in organizing the classes, while allowing us to break any problem faced into simpler ideas.
+The wedding planner is a desktop application that manages and plans wedding events.
+
+There application is composed of 3 modules: 
+- Adminstrator
+- Planner
+- Client
+
+### Admin Module
+The adminstrator accepts client registration and assigns events to planners along with a follow up for the registered events.
+### Planner Module
+The planner reviews client requests, edits any of the event's details ,and types in a comment about the event.
+### Client Module
+The Client can choose his/her preference concering the event's details ,and can later on edit this event ,or even add a new event.
