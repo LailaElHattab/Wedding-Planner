@@ -3,6 +3,7 @@ package weddingplanner.ui.admin;
 import org.jdatepicker.impl.JDatePanelImpl;
 import org.jdatepicker.impl.JDatePickerImpl;
 import org.jdatepicker.impl.UtilDateModel;
+import weddingplanner.managers.DateLabelFormatter;
 import weddingplanner.managers.DateUtils;
 import weddingplanner.managers.EventManager;
 import weddingplanner.managers.UsersManager;
@@ -16,10 +17,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 import java.util.Properties;
 
@@ -318,26 +316,7 @@ public class EventDetailsDialog extends JDialog implements ActionListener {
         }
     }
 
-    public class DateLabelFormatter extends JFormattedTextField.AbstractFormatter {
 
-        private String datePattern = "dd-MM-yyyy";
-        private SimpleDateFormat dateFormatter = new SimpleDateFormat(datePattern);
-
-        @Override
-        public Object stringToValue(String text) throws ParseException {
-            return dateFormatter.parseObject(text);
-        }
-
-        @Override
-        public String valueToString(Object value) throws ParseException {
-            if (value != null) {
-                Calendar cal = (Calendar) value;
-                return dateFormatter.format(cal.getTime());
-            }
-            return "";
-        }
-
-    }
 }
 
 
